@@ -1,0 +1,21 @@
+<div>
+    <h1>Bienvenido {{this.first_name}}</h1>
+    {{#if email}}
+    <p>email: {{this.email}}</p>
+    {{/if}}
+    <p>rol: {{this.rol}}</p>
+  <table>
+  <tr>
+    <th>Producto</th>
+    <th>Descripcion</th>
+    <th>Precio</th>
+  </tr>
+  {{#each productos}}
+  <tr>
+    <td>{{this.title}} </td>
+    <td>{{this.description}} </td>
+    <td>{{this.price}} </td>
+  </tr>
+    {{/each}}
+</table>
+</div>
